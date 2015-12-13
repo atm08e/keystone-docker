@@ -1,0 +1,6 @@
+MONGO_URI=mongo
+NODE_ENV=production
+COOKIE_SECRET=3133731337
+#GA_DOMAIN={your google analytics domain} // optional
+#GA_PROPERTY={your google analytics property} // optional
+#PORT={the port to listen on} // defaults to 3000
