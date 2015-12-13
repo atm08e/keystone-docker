@@ -1,0 +1,25 @@
+nginx:
+  build:./nginx/
+  net:
+  - "bridge"
+  links:
+  - app
+
+mongo:
+  image: mongo
+  net:
+  - "bridge"
+
+app:
+  build: ./app/
+  net:
+  - "bridge"
+  ports:
+  - "3000:3000"
+#   volumes:
+#   - .:/code
+  links:
+  - mongo
+  environment:
+  - MONGO_URI=mongo
+
