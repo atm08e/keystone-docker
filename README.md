@@ -6,15 +6,16 @@ Scaleable docker infrastructure for keystone.js. Includes ubuntu base docker con
 
 ## How To
 Prerequisites:
-* Docker
+* docker
+* docker-composer
 
 Run:
-```text
+```code
 $ cd keystone-docker
-$ docker-compuer up
+$ docker-composer up
 
 ```
 
-Code: /opt/app
+Application code is at: /opt/app
 
 
