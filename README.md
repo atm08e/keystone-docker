@@ -9,12 +9,9 @@ Prerequisites:
 * docker
 * docker-composer
 
-Run:
-```code
-$ cd keystone-docker
-$ docker-composer up
-
-```
+To Run:
+* cd keystone-docker
+* docker-composer up
 
 Application code is at: /opt/app
 
