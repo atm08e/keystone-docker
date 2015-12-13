@@ -12,8 +12,6 @@ app:
   build: ./app/
   ports:
   - "3000:3000"
-#   volumes:
-#   - .:/code
   links:
   - mongo
   environment:

@@ -14,5 +14,6 @@ To Run:
 * docker-composer up
 
 Application code is at: /opt/app
+Statics accessible at /static/ and served from /opp/app/static
 
 

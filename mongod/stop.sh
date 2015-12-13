@@ -1,2 +1,2 @@
 #!/bin/bash
-docker stop mongo
+docker stop mongod

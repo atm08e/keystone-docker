@@ -1,3 +1,3 @@
 #!/bin/bash
-DOCKER_ID='mongo'
+DOCKER_ID='mongod'
 docker exec -it $DOCKER_ID bash
