@@ -1,19 +1,15 @@
 nginx:
-  build:./nginx/
-  net:
-  - "bridge"
+  build: ./nginx/
   links:
   - app
+  ports:
+  - "80:80"
 
 mongo:
   image: mongo
-  net:
-  - "bridge"
 
 app:
   build: ./app/
-  net:
-  - "bridge"
   ports:
   - "3000:3000"
 #   volumes:
@@ -22,4 +18,5 @@ app:
   - mongo
   environment:
   - MONGO_URI=mongo
+  - NODE_ENV=production
 

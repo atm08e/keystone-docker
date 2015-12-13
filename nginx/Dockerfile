@@ -21,10 +21,16 @@ RUN \
 # Custom Config
 ADD default /etc/nginx/sites-available/default
 
-# Run Nginx Server
-ENTRYPOINT  ["nginx"]
+# Echo Logs
+RUN ln -sf /dev/stdout /var/log/nginx/access.log
+RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
 # Expose Redis port 6379
 EXPOSE 80
 EXPOSE 443
+
+# Run Nginx Server
+ENTRYPOINT  ["nginx"]
+
+
 
