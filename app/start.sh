@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run --name app -t -i  amiller/ubuntu-app:v1
+docker run  --rm --name app -t -i  amiller/ubuntu-app:v1

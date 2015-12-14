@@ -12,7 +12,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Key Server. Seems trustworthy
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 
-# Mongo Pre
+# Mongo Preinstall
 RUN mkdir -p /data/db
 
 # Get mongo repo and install
@@ -22,8 +22,8 @@ RUN apt-get update
 RUN apt-get install -y mongodb-org
 RUN apt-get autoclean
 
-# Custom config
-# ADD mongo.conf /etc/m
+# Custom config TODO
+# ADD mongo.conf /etc/blah
 
 # Run Nginx Server
 ENTRYPOINT  ["mongod"]

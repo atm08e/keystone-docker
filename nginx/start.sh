@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run --name nginx -t -i  amiller/nginx:v1
+docker run --rm --name nginx -t -i  amiller/nginx:v1
