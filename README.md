@@ -1,7 +1,18 @@
 keystone-docker
 =======
-## Summary
-Scaleable docker infrastructure for keystone.js. Uses ubuntu 14.04.3 base image with nginx/mongodb/nodejs installed respectively. Images are quite large at this moment and "npm install" will barf a little on optional dependencies, but the keystone application doesn't seem effected.
+# Summary
+Scaleable docker infrastructure for keystone.js. Uses ubuntu 14.04.3 base image with nginx/mongodb/nodejs installed ontop of respectively.
+
+## App Container
+* NodeJS version 4.2.3 is installed to /opt/nodejs. 
+* keystone-demo is cloned to /opt/app/keystone
+* npm install and node keystone
+
+## Nginx Container
+* nginx is installed from 14.04.3 repo
+* default nginx conf is copied for reverse proxy and static file hosting
+
+ Images are quite large at this moment and "npm install" will barf a little on optional dependencies, but the keystone application doesn't seem effected.
 
 ## How To
 Prerequisites:
